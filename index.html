@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Limpiezas Brillo Bages | Limpieza profesional en Manresa y Bages</title>
+  <title>Limpiezas Brillo Bages | Limpieza profesional</title>
 
-  <meta name="description" content="Servicios profesionales de limpieza en Manresa y el Bages. Hogares, oficinas, comunidades y negocios. Solicita tu presupuesto.">
+  <meta name="description" content="Limpiezas Brillo Bages. Servicios de limpieza profesional en Manresa y el Bages.">
 
-  <!-- =========================
-       BOTPRESS - NO TOCAR
-       ========================= -->
-
+  <!-- BOTPRESS - NO MODIFICAR -->
   <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
-
   <script src="https://files.bpcontent.cloud/2026/09/24/16/20260924163845-5JOWFHF9.js" defer></script>
 
-
   <style>
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -31,7 +26,7 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #17324d;
+      color: #173b4d;
       background: #ffffff;
       line-height: 1.6;
     }
@@ -41,7 +36,7 @@
     }
 
     /* =========================
-       HEADER
+       CABECERA
        ========================= */
 
     header {
@@ -49,21 +44,18 @@
       top: 0;
       z-index: 100;
       background: rgba(255,255,255,0.97);
-      border-bottom: 1px solid #e8eef2;
+      border-bottom: 1px solid #e5eef1;
       box-shadow: 0 3px 18px rgba(20,60,80,0.06);
     }
 
     .header-inner {
       max-width: 1180px;
       margin: auto;
-      padding: 15px 25px;
+      padding: 14px 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
     }
-
-    /* LOGO */
 
     .logo {
       display: flex;
@@ -76,7 +68,7 @@
       width: 48px;
       height: 48px;
       border-radius: 14px;
-      background: linear-gradient(135deg, #13b8b0, #19739b);
+      background: linear-gradient(135deg,#14b8b0,#19739b);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -87,35 +79,35 @@
 
     .logo-text strong {
       display: block;
-      font-size: 20px;
+      font-size: 19px;
       line-height: 1.1;
     }
 
     .logo-text span {
       font-size: 12px;
-      color: #6d8794;
+      color: #718792;
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 24px;
     }
 
     nav a {
       color: #35566a;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #11a9a5;
+      color: #10aaa5;
     }
 
     .nav-button {
       background: #13aaa7;
       color: white !important;
-      padding: 11px 17px;
+      padding: 11px 18px;
       border-radius: 25px;
     }
 
@@ -125,20 +117,25 @@
 
     .hero {
       min-height: 650px;
-      position: relative;
-      overflow: hidden;
-      background:
-        linear-gradient(90deg, rgba(8,50,70,0.90), rgba(8,50,70,0.58), rgba(8,50,70,0.15)),
-        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=85")
-        center/cover no-repeat;
-
       display: flex;
       align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(7,48,68,0.92),
+          rgba(7,48,68,0.62),
+          rgba(7,48,68,0.15)
+        ),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
     }
 
     .hero-content {
-      width: 100%;
       max-width: 1180px;
+      width: 100%;
       margin: auto;
       padding: 80px 25px;
       color: white;
@@ -146,29 +143,29 @@
 
     .hero-label {
       display: inline-block;
-      background: rgba(19,184,176,0.92);
+      background: #13b8b0;
       padding: 8px 15px;
       border-radius: 30px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     .hero h1 {
-      max-width: 700px;
-      font-size: clamp(40px, 6vw, 68px);
+      max-width: 720px;
+      font-size: clamp(42px,6vw,68px);
       line-height: 1.05;
       margin-bottom: 22px;
-      letter-spacing: -1.5px;
+      letter-spacing: -1px;
     }
 
     .hero h1 span {
-      color: #68e1d8;
+      color: #6de2da;
     }
 
     .hero p {
       max-width: 650px;
-      font-size: 20px;
+      font-size: 19px;
       color: #edfafa;
       margin-bottom: 30px;
     }
@@ -186,13 +183,15 @@
       padding: 15px 24px;
       border-radius: 30px;
       font-weight: bold;
-      transition: 0.2s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.2s;
     }
 
     .btn-primary {
       background: #16b5ae;
       color: white;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
     }
 
     .btn-primary:hover {
@@ -210,18 +209,16 @@
     }
 
     /* =========================
-       TRUST BAR
+       BARRA
        ========================= */
 
     .trust {
       background: white;
       box-shadow: 0 5px 25px rgba(20,60,80,0.08);
-      position: relative;
-      z-index: 2;
     }
 
     .trust-inner {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: auto;
       padding: 22px 25px;
       display: flex;
@@ -234,16 +231,16 @@
     .trust-item strong {
       display: block;
       color: #124d67;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .trust-item span {
-      font-size: 13px;
+      font-size: 12px;
       color: #78909c;
     }
 
     /* =========================
-       SERVICES
+       SECCIONES
        ========================= */
 
     .section {
@@ -260,7 +257,7 @@
       margin-bottom: 45px;
     }
 
-    .section-title .eyebrow {
+    .eyebrow {
       color: #12a9a4;
       text-transform: uppercase;
       font-size: 12px;
@@ -272,18 +269,23 @@
     .section-title h2 {
       color: #123f55;
       font-size: 38px;
+      line-height: 1.15;
       margin-bottom: 12px;
     }
 
     .section-title p {
-      max-width: 650px;
+      max-width: 680px;
       margin: auto;
       color: #708692;
     }
 
+    /* =========================
+       SERVICIOS
+       ========================= */
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 22px;
     }
 
@@ -293,7 +295,7 @@
       border-radius: 20px;
       padding: 30px 24px;
       box-shadow: 0 10px 30px rgba(20,70,90,0.07);
-      transition: 0.25s ease;
+      transition: 0.25s;
     }
 
     .service-card:hover {
@@ -316,7 +318,7 @@
     .service-card h3 {
       color: #124d67;
       margin-bottom: 10px;
-      font-size: 19px;
+      font-size: 18px;
     }
 
     .service-card p {
@@ -325,11 +327,95 @@
     }
 
     /* =========================
-       ABOUT
+       ANTES Y DESPUÉS
+       ========================= */
+
+    .before-after {
+      background: #f4fafb;
+    }
+
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 28px;
+    }
+
+    .comparison-card {
+      background: white;
+      border: 1px solid #e5eef1;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(20,70,90,0.08);
+      transition: 0.25s;
+    }
+
+    .comparison-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(20,70,90,0.13);
+    }
+
+    .comparison-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+    }
+
+    .comparison-image {
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .comparison-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+
+    .comparison-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .comparison-image span {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      padding: 6px 11px;
+      border-radius: 20px;
+      background: rgba(8,55,70,0.88);
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .comparison-card h3 {
+      color: #124d67;
+      font-size: 19px;
+      padding: 20px 22px 5px;
+    }
+
+    .comparison-card p {
+      color: #718690;
+      font-size: 14px;
+      padding: 0 22px 22px;
+    }
+
+    .demo-notice {
+      text-align: center;
+      color: #94a7ae;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+
+    /* =========================
+       SOBRE NOSOTROS
        ========================= */
 
     .about {
-      background: #f3fafb;
+      background: white;
     }
 
     .about-grid {
@@ -342,10 +428,11 @@
     .about-image {
       min-height: 430px;
       border-radius: 25px;
+
       background:
-        linear-gradient(rgba(10,80,100,0.08), rgba(10,80,100,0.08)),
         url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85")
         center/cover no-repeat;
+
       box-shadow: 0 18px 40px rgba(20,70,90,0.13);
     }
 
@@ -358,7 +445,7 @@
 
     .about p {
       color: #667f8c;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .check-list {
@@ -368,7 +455,7 @@
     }
 
     .check-list li {
-      font-weight: 600;
+      font-weight: bold;
       color: #315a6d;
     }
 
@@ -383,18 +470,20 @@
       background: #d9f5f3;
       color: #0b9c98;
       margin-right: 10px;
-      font-weight: bold;
     }
 
     /* =========================
-       PROCESS
+       COMO FUNCIONA
        ========================= */
+
+    .process {
+      background: #f8fbfc;
+    }
 
     .process-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 25px;
-      margin-top: 45px;
     }
 
     .process-card {
@@ -407,7 +496,7 @@
       height: 55px;
       border-radius: 50%;
       margin: 0 auto 18px;
-      background: linear-gradient(135deg, #13b8b0, #19739b);
+      background: linear-gradient(135deg,#13b8b0,#19739b);
       color: white;
       display: flex;
       align-items: center;
@@ -430,15 +519,22 @@
        CTA
        ========================= */
 
+    .cta-section {
+      padding: 70px 25px;
+      background: white;
+    }
+
     .cta {
-      margin: 20px auto 80px;
       max-width: 1120px;
-      padding: 60px 45px;
+      margin: auto;
+      padding: 65px 40px;
       border-radius: 28px;
+
       background:
-        linear-gradient(110deg, rgba(8,70,92,0.95), rgba(16,139,145,0.88)),
+        linear-gradient(110deg,rgba(8,70,92,0.95),rgba(16,139,145,0.88)),
         url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80")
         center/cover;
+
       color: white;
       text-align: center;
     }
@@ -455,17 +551,16 @@
     }
 
     /* =========================
-       CONTACT
+       CONTACTO
        ========================= */
 
-    .contact-section {
-      background: #f7fbfc;
-      padding-bottom: 85px;
+    .contact {
+      background: #f5fafb;
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 20px;
     }
 
@@ -477,7 +572,7 @@
       text-align: center;
     }
 
-    .contact-card .icon {
+    .contact-icon {
       font-size: 30px;
       margin-bottom: 12px;
     }
@@ -524,7 +619,6 @@
     .footer-links {
       display: flex;
       gap: 22px;
-      align-items: center;
       flex-wrap: wrap;
     }
 
@@ -541,10 +635,11 @@
       color: #9fc0ca;
       font-size: 12px;
       text-align: center;
+      text-align: center;
     }
 
     /* =========================
-       RESPONSIVE
+       MÓVIL
        ========================= */
 
     @media (max-width: 900px) {
@@ -554,16 +649,11 @@
       }
 
       .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
       }
 
       .about-grid {
         grid-template-columns: 1fr;
-      }
-
-      .about-image {
-        min-height: 350px;
-        order: 2;
       }
 
       .contact-grid {
@@ -571,20 +661,10 @@
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
 
       .header-inner {
         padding: 12px 16px;
-      }
-
-      .logo-text strong {
-        font-size: 17px;
-      }
-
-      .logo-icon {
-        width: 42px;
-        height: 42px;
-        font-size: 21px;
       }
 
       .hero {
@@ -605,7 +685,6 @@
 
       .hero-buttons {
         flex-direction: column;
-        align-items: stretch;
       }
 
       .btn {
@@ -627,21 +706,26 @@
         font-size: 30px;
       }
 
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .services-grid,
+      .before-after-grid,
       .process-grid {
         grid-template-columns: 1fr;
       }
 
+      .comparison-image {
+        height: 200px;
+      }
+
+      .cta-section {
+        padding: 50px 18px;
+      }
+
       .cta {
-        margin: 10px 18px 60px;
         padding: 45px 22px;
       }
     }
-  </style>
 
+  </style>
 </head>
 
 <body>
@@ -651,103 +735,112 @@
        ========================= -->
 
   <header>
+
     <div class="header-inner">
 
-```
-  <a href="#" class="logo">
-    <div class="logo-icon">✨</div>
+      <a href="#" class="logo">
 
-    <div class="logo-text">
-      <strong>Limpiezas Brillo Bages</strong>
-      <span>Manresa y Bages</span>
+        <div class="logo-icon">✨</div>
+
+        <div class="logo-text">
+          <strong>Limpiezas Brillo Bages</strong>
+          <span>Manresa y Bages</span>
+        </div>
+
+      </a>
+
+      <nav>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#antes-despues">Antes y después</a>
+
+        <a href="#nosotros">Sobre nosotros</a>
+
+        <a href="#contacto">Contacto</a>
+
+        <a href="#presupuesto" class="nav-button">
+          Solicitar presupuesto
+        </a>
+
+      </nav>
+
     </div>
-  </a>
-
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#nosotros">Sobre nosotros</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#presupuesto" class="nav-button">Solicitar presupuesto</a>
-  </nav>
-
-</div>
-```
 
   </header>
 
+
   <!-- =========================
-       HERO
+       PORTADA
        ========================= -->
 
   <section class="hero">
 
-```
-<div class="hero-content">
+    <div class="hero-content">
 
-  <div class="hero-label">
-    ✨ LIMPIEZA PROFESIONAL EN MANRESA Y BAGES
-  </div>
+      <div class="hero-label">
+        ✨ LIMPIEZA PROFESIONAL EN MANRESA Y BAGES
+      </div>
 
-  <h1>
-    Limpieza profesional,
-    <span>brillo que se nota.</span>
-  </h1>
+      <h1>
+        Limpieza profesional,
+        <span>brillo que se nota.</span>
+      </h1>
 
-  <p>
-    Cuidamos tu hogar, negocio o comunidad para que tú puedas
-    dedicar tu tiempo a lo que realmente importa.
-  </p>
+      <p>
+        Cuidamos tu hogar, negocio o comunidad para que tú puedas
+        dedicar tu tiempo a lo que realmente importa.
+      </p>
 
-  <div class="hero-buttons">
+      <div class="hero-buttons">
 
-    <a href="#presupuesto" class="btn btn-primary">
-      📋 Solicitar presupuesto
-    </a>
+        <a href="#presupuesto" class="btn btn-primary">
+          📋 Solicitar presupuesto
+        </a>
 
-    <a href="#servicios" class="btn btn-light">
-      Ver nuestros servicios
-    </a>
+        <a href="#servicios" class="btn btn-light">
+          Ver nuestros servicios
+        </a>
 
-  </div>
+      </div>
 
-</div>
-```
+    </div>
 
   </section>
 
+
   <!-- =========================
-       BARRA DE CONFIANZA
+       CONFIANZA
        ========================= -->
 
   <section class="trust">
 
-```
-<div class="trust-inner">
+    <div class="trust-inner">
 
-  <div class="trust-item">
-    <strong>📍 Manresa y Bages</strong>
-    <span>Servicio de proximidad</span>
-  </div>
+      <div class="trust-item">
+        <strong>📍 Manresa y Bages</strong>
+        <span>Servicio de proximidad</span>
+      </div>
 
-  <div class="trust-item">
-    <strong>✨ Atención personalizada</strong>
-    <span>Cada espacio es diferente</span>
-  </div>
+      <div class="trust-item">
+        <strong>✨ Atención personalizada</strong>
+        <span>Cada espacio es diferente</span>
+      </div>
 
-  <div class="trust-item">
-    <strong>🤝 Trato cercano</strong>
-    <span>Estamos para ayudarte</span>
-  </div>
+      <div class="trust-item">
+        <strong>🤝 Trato cercano</strong>
+        <span>Estamos para ayudarte</span>
+      </div>
 
-  <div class="trust-item">
-    <strong>🤖 Asistente IA</strong>
-    <span>Consulta cuando quieras</span>
-  </div>
+      <div class="trust-item">
+        <strong>🤖 Asistente IA</strong>
+        <span>Consulta cuando quieras</span>
+      </div>
 
-</div>
-```
+    </div>
 
   </section>
+
 
   <!-- =========================
        SERVICIOS
@@ -755,251 +848,298 @@
 
   <section class="section" id="servicios">
 
-```
-<div class="section-inner">
+    <div class="section-inner">
 
-  <div class="section-title">
+      <div class="section-title">
 
-    <div class="eyebrow">Nuestros servicios</div>
+        <div class="eyebrow">
+          Nuestros servicios
+        </div>
 
-    <h2>Soluciones de limpieza para cada espacio</h2>
+        <h2>
+          Soluciones de limpieza para cada espacio
+        </h2>
 
-    <p>
-      Elige el servicio que necesitas y cuéntanos qué buscas.
-      Nuestro asistente puede ayudarte a preparar tu solicitud.
-    </p>
+        <p>
+          Servicios adaptados a hogares, empresas, oficinas,
+          comunidades y negocios.
+        </p>
 
-  </div>
+      </div>
 
 
-  <div class="services-grid">
+      <div class="services-grid">
 
-    <div class="service-card">
+        <div class="service-card">
 
-      <div class="service-icon">🏠</div>
+          <div class="service-icon">🏠</div>
 
-      <h3>Limpieza de hogares</h3>
+          <h3>Limpieza de hogares</h3>
 
-      <p>
-        Limpieza puntual o periódica para pisos, casas y viviendas.
-      </p>
+          <p>
+            Limpieza puntual o periódica para pisos,
+            casas y viviendas.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">🏢</div>
+
+          <h3>Oficinas y negocios</h3>
+
+          <p>
+            Mantenemos tus espacios de trabajo limpios
+            y cuidados.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">🏘️</div>
+
+          <h3>Comunidades</h3>
+
+          <p>
+            Limpieza y mantenimiento de portales,
+            escaleras y zonas comunes.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">🧽</div>
+
+          <h3>Limpiezas puntuales</h3>
+
+          <p>
+            Servicios especiales para necesidades
+            concretas de limpieza.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
-
-
-    <div class="service-card">
-
-      <div class="service-icon">🏢</div>
-
-      <h3>Oficinas y negocios</h3>
-
-      <p>
-        Mantén tu espacio de trabajo limpio, cuidado y agradable.
-      </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-      <div class="service-icon">🏘️</div>
-
-      <h3>Comunidades</h3>
-
-      <p>
-        Mantenimiento de zonas comunes, portales y escaleras.
-      </p>
-
-    </div>
-
-
-    <div class="service-card">
-
-      <div class="service-icon">🧽</div>
-
-      <h3>Limpiezas puntuales</h3>
-
-      <p>
-        Servicios especiales para necesidades concretas de limpieza.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
-    <!-- =========================
+
+
+  <!-- =========================
        ANTES Y DESPUÉS
        ========================= -->
 
-  <section class="section before-after">
+  <section class="section before-after" id="antes-despues">
 
-```
-<div class="section-inner">
+    <div class="section-inner">
 
-  <div class="section-title">
+      <div class="section-title">
 
-    <div class="eyebrow">El cambio se nota</div>
-
-    <h2>Antes y después</h2>
-
-    <p>
-      Descubre cómo una limpieza profesional puede transformar
-      completamente un espacio.
-    </p>
-
-  </div>
-
-
-  <div class="before-after-grid">
-
-    <!-- EJEMPLO 1 -->
-
-    <div class="comparison-card">
-
-      <div class="comparison-images">
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85"
-            alt="Cocina antes de la limpieza"
-          >
-          <span>ANTES</span>
+        <div class="eyebrow">
+          El cambio se nota
         </div>
 
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
-            alt="Cocina limpia"
-          >
-          <span>DESPUÉS</span>
+        <h2>
+          Antes y después
+        </h2>
+
+        <p>
+          Descubre cómo una limpieza profesional puede
+          transformar completamente un espacio.
+        </p>
+
+      </div>
+
+
+      <div class="before-after-grid">
+
+
+        <!-- COCINA -->
+
+        <div class="comparison-card">
+
+          <div class="comparison-images">
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85"
+                alt="Cocina antes de la limpieza"
+              >
+
+              <span>ANTES</span>
+
+            </div>
+
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+                alt="Cocina limpia"
+              >
+
+              <span>DESPUÉS</span>
+
+            </div>
+
+          </div>
+
+          <h3>
+            ✨ Limpieza de cocina
+          </h3>
+
+          <p>
+            Limpieza y cuidado de superficies para recuperar
+            la sensación de orden y limpieza.
+          </p>
+
+        </div>
+
+
+        <!-- BAÑO -->
+
+        <div class="comparison-card">
+
+          <div class="comparison-images">
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=85"
+                alt="Baño antes de la limpieza"
+              >
+
+              <span>ANTES</span>
+
+            </div>
+
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=85"
+                alt="Baño limpio"
+              >
+
+              <span>DESPUÉS</span>
+
+            </div>
+
+          </div>
+
+          <h3>
+            ✨ Limpieza de baño
+          </h3>
+
+          <p>
+            Higiene y limpieza profunda para dejar el baño
+            cuidado y preparado para el día a día.
+          </p>
+
+        </div>
+
+
+        <!-- VIVIENDA -->
+
+        <div class="comparison-card">
+
+          <div class="comparison-images">
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85"
+                alt="Salón antes de la limpieza"
+              >
+
+              <span>ANTES</span>
+
+            </div>
+
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                alt="Salón limpio"
+              >
+
+              <span>DESPUÉS</span>
+
+            </div>
+
+          </div>
+
+          <h3>
+            ✨ Limpieza de viviendas
+          </h3>
+
+          <p>
+            Orden y limpieza para disfrutar de un hogar
+            más agradable y cuidado.
+          </p>
+
+        </div>
+
+
+        <!-- OFICINA -->
+
+        <div class="comparison-card">
+
+          <div class="comparison-images">
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                alt="Oficina antes de la limpieza"
+              >
+
+              <span>ANTES</span>
+
+            </div>
+
+
+            <div class="comparison-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+                alt="Oficina limpia"
+              >
+
+              <span>DESPUÉS</span>
+
+            </div>
+
+          </div>
+
+          <h3>
+            ✨ Limpieza de oficinas
+          </h3>
+
+          <p>
+            Espacios de trabajo limpios, ordenados y agradables
+            para empleados y clientes.
+          </p>
+
         </div>
 
       </div>
 
-      <h3>✨ Limpieza de cocina</h3>
 
-      <p>
-        Limpieza y cuidado de superficies para recuperar
-        la sensación de orden y limpieza.
+      <p class="demo-notice">
+        * Imágenes ilustrativas utilizadas para esta demostración.
       </p>
 
     </div>
-
-
-    <!-- EJEMPLO 2 -->
-
-    <div class="comparison-card">
-
-      <div class="comparison-images">
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=85"
-            alt="Baño antes de la limpieza"
-          >
-          <span>ANTES</span>
-        </div>
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=85"
-            alt="Baño limpio"
-          >
-          <span>DESPUÉS</span>
-        </div>
-
-      </div>
-
-      <h3>✨ Limpieza de baño</h3>
-
-      <p>
-        Higiene y limpieza profunda para dejar el baño
-        cuidado y preparado para el día a día.
-      </p>
-
-    </div>
-
-
-    <!-- EJEMPLO 3 -->
-
-    <div class="comparison-card">
-
-      <div class="comparison-images">
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85"
-            alt="Salón antes de la limpieza"
-          >
-          <span>ANTES</span>
-        </div>
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-            alt="Salón limpio"
-          >
-          <span>DESPUÉS</span>
-        </div>
-
-      </div>
-
-      <h3>✨ Limpieza de viviendas</h3>
-
-      <p>
-        Orden y limpieza para disfrutar de un hogar
-        más agradable y cuidado.
-      </p>
-
-    </div>
-
-
-    <!-- EJEMPLO 4 -->
-
-    <div class="comparison-card">
-
-      <div class="comparison-images">
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
-            alt="Oficina antes de la limpieza"
-          >
-          <span>ANTES</span>
-        </div>
-
-        <div class="comparison-image">
-          <img
-            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
-            alt="Oficina limpia"
-          >
-          <span>DESPUÉS</span>
-        </div>
-
-      </div>
-
-      <h3>✨ Limpieza de oficinas</h3>
-
-      <p>
-        Espacios de trabajo limpios, ordenados y agradables
-        para empleados y clientes.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <p class="demo-notice">
-    * Imágenes ilustrativas utilizadas para esta demostración.
-  </p>
-
-</div>
-```
 
   </section>
 
@@ -1010,217 +1150,270 @@
 
   <section class="section about" id="nosotros">
 
-```
-<div class="section-inner">
+    <div class="section-inner">
 
-  <div class="about-grid">
+      <div class="about-grid">
 
-    <div class="about-image"></div>
+        <div class="about-image"></div>
 
-    <div>
 
-      <div class="section-title" style="text-align:left;margin-bottom:20px;">
+        <div>
 
-        <div class="eyebrow">Sobre nosotros</div>
+          <div class="eyebrow">
+            Sobre nosotros
+          </div>
 
-        <h2>Un espacio limpio cambia cómo te sientes.</h2>
+          <h2>
+            Un espacio limpio cambia cómo te sientes.
+          </h2>
+
+          <p>
+            En Limpiezas Brillo Bages apostamos por un servicio
+            cercano, profesional y adaptado a las necesidades
+            de cada cliente.
+          </p>
+
+          <p>
+            Trabajamos en Manresa y diferentes localidades del
+            Bages ofreciendo soluciones de limpieza para hogares,
+            empresas y comunidades.
+          </p>
+
+
+          <ul class="check-list">
+
+            <li>
+              Atención personalizada
+            </li>
+
+            <li>
+              Servicios adaptados a cada necesidad
+            </li>
+
+            <li>
+              Presupuestos personalizados
+            </li>
+
+            <li>
+              Atención rápida y cercana
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
 
-      <p>
-        En Limpiezas Brillo Bages apostamos por un servicio cercano,
-        profesional y adaptado a las necesidades de cada cliente.
-      </p>
-
-      <p>
-        Trabajamos en Manresa y diferentes localidades del Bages
-        ofreciendo soluciones de limpieza para hogares, empresas
-        y comunidades.
-      </p>
-
-      <ul class="check-list">
-
-        <li>Atención personalizada</li>
-
-        <li>Servicios adaptados a cada necesidad</li>
-
-        <li>Presupuestos personalizados</li>
-
-        <li>Atención rápida y cercana</li>
-
-      </ul>
-
     </div>
 
-  </div>
-
-</div>
-```
-
   </section>
+
 
   <!-- =========================
-       CÓMO FUNCIONA
+       COMO FUNCIONA
        ========================= -->
 
-  <section class="section">
+  <section class="section process">
 
-```
-<div class="section-inner">
+    <div class="section-inner">
 
-  <div class="section-title">
+      <div class="section-title">
 
-    <div class="eyebrow">Así de fácil</div>
+        <div class="eyebrow">
+          Así de fácil
+        </div>
 
-    <h2>Solicitar tu presupuesto es muy sencillo</h2>
+        <h2>
+          Solicitar tu presupuesto es muy sencillo
+        </h2>
 
-    <p>
-      Nuestro asistente IA puede recoger la información inicial
-      para preparar tu solicitud.
-    </p>
+        <p>
+          Nuestro asistente IA puede recoger la información
+          inicial para preparar tu solicitud.
+        </p>
 
-  </div>
+      </div>
 
 
-  <div class="process-grid">
+      <div class="process-grid">
 
-    <div class="process-card">
 
-      <div class="number">1</div>
+        <div class="process-card">
 
-      <h3>Cuéntanos qué necesitas</h3>
+          <div class="number">
+            1
+          </div>
 
-      <p>
-        Habla con nuestro asistente y explícanos qué espacio quieres limpiar.
-      </p>
+          <h3>
+            Cuéntanos qué necesitas
+          </h3>
+
+          <p>
+            Habla con nuestro asistente y explícanos
+            qué espacio quieres limpiar.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="number">
+            2
+          </div>
+
+          <h3>
+            Recogemos los datos
+          </h3>
+
+          <p>
+            Te preguntaremos algunos detalles para
+            conocer mejor el servicio.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="number">
+            3
+          </div>
+
+          <h3>
+            Preparamos tu solicitud
+          </h3>
+
+          <p>
+            Con la información recibida podremos preparar
+            tu presupuesto personalizado.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
-
-
-    <div class="process-card">
-
-      <div class="number">2</div>
-
-      <h3>Recogemos los datos</h3>
-
-      <p>
-        Te preguntaremos algunos detalles para conocer mejor el servicio.
-      </p>
-
-    </div>
-
-
-    <div class="process-card">
-
-      <div class="number">3</div>
-
-      <h3>Preparamos tu solicitud</h3>
-
-      <p>
-        Con la información recibida podremos preparar tu presupuesto personalizado.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- =========================
-       CTA
+       PRESUPUESTO
        ========================= -->
 
-  <section class="cta" id="presupuesto">
+  <section class="cta-section" id="presupuesto">
 
-```
-<h2>¿Necesitas un presupuesto?</h2>
+    <div class="cta">
 
-<p>
-  Habla ahora con nuestro asistente virtual y cuéntanos qué tipo
-  de limpieza necesitas.
-</p>
+      <h2>
+        ¿Necesitas un presupuesto?
+      </h2>
 
-<button
-  class="btn btn-light"
-  onclick="if(window.botpress && window.botpress.open) window.botpress.open();"
->
-  🤖 Hablar con nuestro asistente IA
-</button>
-```
+      <p>
+        Habla ahora con nuestro asistente virtual y cuéntanos
+        qué tipo de limpieza necesitas.
+      </p>
+
+      <button
+        class="btn btn-light"
+        onclick="if(window.botpress && window.botpress.open) window.botpress.open();"
+      >
+        🤖 Hablar con nuestro asistente IA
+      </button>
+
+    </div>
 
   </section>
+
 
   <!-- =========================
        CONTACTO
        ========================= -->
 
-  <section class="section contact-section" id="contacto">
+  <section class="section contact" id="contacto">
 
-```
-<div class="section-inner">
+    <div class="section-inner">
 
-  <div class="section-title">
+      <div class="section-title">
 
-    <div class="eyebrow">Contacto</div>
+        <div class="eyebrow">
+          Contacto
+        </div>
 
-    <h2>Estamos aquí para ayudarte</h2>
+        <h2>
+          Estamos aquí para ayudarte
+        </h2>
 
-    <p>
-      Puedes contactar con nosotros o utilizar nuestro asistente IA.
-    </p>
+        <p>
+          Puedes contactar con nosotros o utilizar
+          nuestro asistente IA.
+        </p>
 
-  </div>
+      </div>
 
 
-  <div class="contact-grid">
+      <div class="contact-grid">
 
-    <div class="contact-card">
 
-      <div class="icon">📍</div>
+        <div class="contact-card">
 
-      <h3>Zona de servicio</h3>
+          <div class="contact-icon">
+            📍
+          </div>
 
-      <p>
-        Manresa y localidades del Bages
-      </p>
+          <h3>
+            Zona de servicio
+          </h3>
+
+          <p>
+            Manresa y localidades del Bages
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            💬
+          </div>
+
+          <h3>
+            Asistente IA
+          </h3>
+
+          <p>
+            Resuelve tus primeras dudas y solicita
+            tu presupuesto.
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            📋
+          </div>
+
+          <h3>
+            Presupuesto
+          </h3>
+
+          <p>
+            Solicita una propuesta adaptada
+            a tus necesidades.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
-
-
-    <div class="contact-card">
-
-      <div class="icon">💬</div>
-
-      <h3>Asistente IA</h3>
-
-      <p>
-        Resuelve tus primeras dudas y solicita tu presupuesto.
-      </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-      <div class="icon">📋</div>
-
-      <h3>Presupuesto</h3>
-
-      <p>
-        Solicita una propuesta adaptada a tus necesidades.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- =========================
        FOOTER
@@ -1228,43 +1421,52 @@
 
   <footer>
 
-```
-<div class="footer-inner">
+    <div class="footer-inner">
 
-  <div class="footer-brand">
+      <div class="footer-brand">
 
-    <strong>✨ Limpiezas Brillo Bages</strong>
+        <strong>
+          ✨ Limpiezas Brillo Bages
+        </strong>
 
-    <p>
-      Limpieza profesional en Manresa y el Bages.
-    </p>
+        <p>
+          Limpieza profesional en Manresa y el Bages.
+        </p>
 
-  </div>
-
-
-  <div class="footer-links">
-
-    <a href="#servicios">Servicios</a>
-
-    <a href="#nosotros">Sobre nosotros</a>
-
-    <a href="#contacto">Contacto</a>
-
-    <a href="#presupuesto">Presupuesto</a>
-
-  </div>
-
-</div>
+      </div>
 
 
-<div class="copyright">
+      <div class="footer-links">
 
-  © 2026 Limpiezas Brillo Bages · Proyecto demostrativo
+        <a href="#servicios">
+          Servicios
+        </a>
 
-</div>
-```
+        <a href="#antes-despues">
+          Antes y después
+        </a>
+
+        <a href="#nosotros">
+          Sobre nosotros
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Limpiezas Brillo Bages · Proyecto demostrativo
+
+    </div>
 
   </footer>
+
 
 </body>
 </html>
